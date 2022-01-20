@@ -1,0 +1,85 @@
+
+.textarea{
+    background: white;
+    border: none;
+    border: 3px solid #3f51b5;
+    resize: none;
+    
+    margin: 0 2%;
+    width: 95%;
+    min-height: 10vh;
+    font-size: 1.5em;
+    
+}
+
+.textarea:focus{
+    background: linear-gradient(to bottom, transparent, #1d2f3d4e);
+    outline: none;
+    
+}
+
+.respuesta{
+    padding: 0 0 1em 3em;
+}
+.parrafo{
+    padding: 0 0 0 0.4em;
+    border-left: 0.4em solid #3f51b5;
+    
+}
+
+
+
+.comentario{
+    margin: 0;
+}
+
+
+.form1{
+    padding: 0 0 1em 3em;
+    
+    
+}
+.textareaRespuesta{
+    background: white;
+    border: none;
+    border: 3px solid #3f51b5;
+    resize: none;
+    
+    width: 100%;
+    min-height: 7vh;
+    font-size: 1.5em;
+    
+}
+.textareaRespuesta:focus{
+    background: linear-gradient(to bottom, transparent, #1d2f3d4e);
+    outline: none;
+    
+}
+
+
+.left{
+    margin: 1em 0 0 89%;
+}
+.btnRespuesta{
+    margin: 1em 0 2em 0;
+}
+.btnRespuesta2{
+    margin: 1em 0 14em 0;
+}
+
+
+
+
+.btnEstandar{
+    /* border: none; */
+    padding: 0.6em;
+    background-color: #3f51b5;
+    border: 2px solid #1D2F3D;
+
+}
+
+.btnEstandar:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}

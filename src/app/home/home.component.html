@@ -1,0 +1,25 @@
+<main id="blog" >
+    <div class="contenedor">
+        <!-- <aside>
+            <h3 class="titulo">Temas</h3>
+            <nav class="indice" *ngFor="let apiMenu of apiCompleta">
+                <a (click)="scroll(apiMenu.id)" class="pointer">Articulo #{{apiMenu.id}}</a>
+            </nav>
+
+        </aside> -->
+        
+        <div class="contenido">
+            <br><br>
+
+            <div class="post" *ngFor="let apiContenido of apiCompleta">
+                <h1 class="titulo" #1 >{{apiContenido.titulo | uppercase}}</h1>
+                <p class="fecha">Publicado el {{apiContenido.createAt | date}}</p>
+                <p>
+                    {{ apiContenido.msjNota | recortar }} 
+                </p>
+                <div class="verMas" (click)="enviarId(apiContenido.id)">ver más</div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+    </div>
+</main>

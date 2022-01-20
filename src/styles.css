@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.menu{
+	position: fixed;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #f2f2f2;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+main {
+	min-height: 100vh;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+.verMas{
+	margin: 0;
+	color: blue;
+	cursor: pointer;
+}
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+main .contenido .fecha {
+	font-size: 14px;
+	color: #B5B5B5;
+}
+
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #1D2F3D;
+	padding: 20px;
+	border-radius: 3px;
+	position: sticky;
+	top: 0;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+@media screen and (max-width: 900px){
+	main .contenedor {
+        
+		flex-direction: column;
+	}
+	aside{
+		position: static;
+	}
+}
+
+.text-danger{
+    color: red;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

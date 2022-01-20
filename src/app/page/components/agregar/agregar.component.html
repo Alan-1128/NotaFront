@@ -1,0 +1,37 @@
+<br><br>
+<br><br>
+<div class="container">
+      <div class="formulario">
+          <div class="titulo">
+              <h3>Agregar Nota</h3>
+          </div>
+          <form class="form" autocomplete="off" [formGroup]="miFormulario" (ngSubmit)="guardar()">
+              <div class="inputs">
+                  <label for="username">Titulo</label>
+                  <label class="text-danger" 
+                        *ngIf="validacion('titulo')">
+                        Debe de ser mayor de 5 caracteres</label>
+                  <textarea type="text"
+                            formControlName="titulo"></textarea>
+              </div>
+              <div class="inputs">
+                  <label for="password">Nota</label>
+                  <span class="text-danger" 
+                        *ngIf="validacion('msjNota')">
+                        Debe de ser mayor de 5 caracteres</span>
+                  <textarea type="text"
+                            class="msjNota" 
+                            formControlName="msjNota"></textarea>
+              </div>
+  
+              
+  
+              <div class="boton">
+                  <button type="submit" class="login">Agregar Nota</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <br><br>
+<br><br>
+
